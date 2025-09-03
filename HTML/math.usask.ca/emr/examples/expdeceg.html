@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Reconstructed from a Web Archive snapshot captured on Nov 25, 2016. Original content authored by the University of Saskatchewan. -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Example -- Exponential Decay </title>
+    </head>
+
+    <body>
+        <h3> Modelling Exponential Decay - Using Logarithms </h3>
+
+        <p>
+            A common example of exponential decay is <em>radioactive decay</em>.
+            Radioactive materials, and some other substances, decompose  according to a formula for exponential decay.
+            <br>
+            That is, the amount of radioactive material A present at time t is given by the formula <center>A=A<sub>0</sub>e<sup>kt</sup></center> where k &lt; 0. 
+            <br>
+            A radioactive substance is often described in terms of its <b> half-life</b>, which is the time required for half the material to decompose.
+        </p>
+
+        <h4>Problem</h4>
+        <p>After 500 years, a sample of radium-226 has decayed to 80.4\% of its original mass. Find the half-life of radium-226.</p>
+
+        <h4>Solution</h4>
+        <p>Let A=  the mass of radium present at time t (t=0 corresponds to 500 years ago).   We want to know for what time t is A = (1/2)A<sub>0</sub>.  However, we do not even know what k is yet. Once we know what k is, we can set A in the formula for exponential decay to be equal to (1/2)A<sub>0</sub>, and then solve for t.</p>
+        
+        <p>
+            First we must determine k.  We are given that after 500 years, the amount present is 80.4% of its original mass.  That is, when t=500, A=0.804 A<sub>0</sub>.  Substituting these values into the formula for exponential decay, we obtain:
+            <center>0.804 A<sub>0</sub>=A<sub>0</sub>e<sup>k(500)</sup>.</center>
+            <br>
+            Dividing through by  A<sub>0</sub> gives us <center> 0.804 = e<sup>500k</sup></center>
+            <br>
+            which is an exponential equation.
+        </p>
+
+        <p>
+            To solve this equation, we take natural logs (ie. ln) of both sides. (Common  logs could be used as well.)
+            <center>ln ( 0.804) = ln (e<sup>500k</sup>) </center>
+            <br>
+            We know that   ln (e<sup>500k</sup>) = 500k by the cancellation properties of ln and e (see <a href="../log.html">Logarithms</a>).  So the equation becomes <center>ln ( 0.804) = 500k</center>
+            <br>
+            and <center>k= (ln 0.804)/500. </center>
+            <br>
+            This is the exact solution; evaluate the natural log with a calculator to get the decimal approximation k = -0.000436 .  
+        </p>
+
+        <p>Since we now know k, we can write the formula (function) for the amount of radium present at time t as <center>A=A<sub>0</sub> e<sup>-0.000436 t</sup>.</center></p>
+
+        <p>
+            <br>
+            Now, we can finally find the half-life. We set A=1/2 A<sub>0</sub> and solve for t. 
+            <center>(1/2)A<sub>0</sub>=A<sub>0</sub> e<sup>-0.000436 t</sup></center>
+        </p>
+        
+        <p>
+            Dividing through by A<sub>0</sub> again, we get:
+            <center>1/2 = e<sup>-0.000436 t</sup>.</center>
+            <br>
+            To solve for t, take natural logs: <center>ln(1/2) = ln[e<sup>-0.000436 t</sup>]. </center>
+            <br>
+            Then applying the cancellation property for logarithms yields <center>ln (1/2) = -0.000436 t</center>
+            <br> So <center>t= ln(1/2) /(-0.000436)</center>
+            <br> or t = 1590. 
+            The half-life is approximately 1590 years.
+        </p>
+
+
+        <p>
+            <br>
+            Return to <a href="../seil.html">Logarithms and modelling</a>.
+        </p>
+
+        <footer>
+            <br>
+            <p>This page is a faithful reconstruction of an educational resource originally hosted by the University of Saskatchewan, archived on Nov 25, 2016. Recreated for archival and accessibility purposes.</p>
+        </footer>
+    </body>
+</html>

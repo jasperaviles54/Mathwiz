@@ -1,0 +1,209 @@
+@font-face {
+  font-family: 'Folkard';
+  src: url('Fonts/folkard_.ttf');
+}
+
+@font-face {
+  font-family: 'DevinneSwash';
+  src: url('Fonts/DevinneSwash.ttf');
+}
+
+body {
+  width: 1000px;
+  background-image: url(Pictures/Scroll.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: auto;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+}
+
+.menu {
+  width: 99%;
+  margin: 0px auto;
+}
+
+.height-1 {
+  height: 1vh;
+}
+
+.height-2 {
+  height: 5vh;
+}
+
+.menu ul {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0px;
+}
+
+.menu ul li {
+  float: left;
+  background: green;
+  color: white;
+  width: 162px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 17px;
+  text-align: center;
+  list-style: none;
+  opacity: 0.9;
+}
+
+.margin-1 {
+  margin-left: 75px;
+}
+
+.margin-2 {
+  margin-top: 20px;
+}
+
+.margin-3 {
+  margin-right: 30px;
+}
+
+.margin-4 {
+  margin-bottom: 35px;
+}
+
+.menu ul li:hover {
+  background: #629601;
+}
+
+.menu ul li:hover>ul {
+  display: block;
+}
+
+.menu ul li ul {
+  display: none;
+}
+
+.menu ul li ul li:hover {
+  background: black;
+}
+
+.menu a:link, a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Folkard';
+}
+
+p {
+  font-family: 'DevinneSwash';
+}
+
+.h1-1 {
+  font-size: 72px;
+}
+
+.h1-2, th {
+  font-family: 'Folkard';
+  font-size: 30px;
+}
+
+.h2-1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.h2-2 {
+  font-size: 40px;
+}
+
+.p-1 {
+  font-size: 20px;
+}
+
+.p-2 {
+  font-size: 30px;
+}
+
+.image {
+  display: block;
+	width: 225px;
+	height: 230px;
+}
+
+.image-1 {
+  width: 50%;
+  height: 50%;
+}
+
+.image-2 {
+  width: 300px;
+  height: 300px;
+}
+
+.image-3 {
+  width: 250px;
+  height: 250px;
+}
+
+.container {
+  position: relative;
+  width: 20%;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 230px;
+	width: 225px;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: green;
+	color: white;
+}
+
+.container:hover .overlay {
+	opacity: 1;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.row .container {
+  background-color: white;
+  width: 225px;
+  height: 230px;
+}
+
+.column {
+	float: left;
+	width: 25%;
+	padding: 10px;
+}
+
+.column img {
+	opacity: 0.8; 
+	cursor: pointer;
+}
+
+.quote {
+  list-style-type: none;
+}
+
+ol li {
+  font-size: 30px;
+  text-align: center;
+}

@@ -1,0 +1,48 @@
+BODY  {	
+	background: #507063 url(../images/bkgstripe_green.jpg);
+ 	}
+
+A:link  {
+	color: #cc0000;
+	  font-family: sans-serif;
+	text-decoration: none;
+	}
+
+A:visited {
+	color: #880000;
+	font-family: sans-serif;
+	text-decoration:none;
+	}
+
+A:active {
+	color: #ff0000;
+	  font-family: sans-serif;
+	text-decoration:none;
+	}
+
+A:hover {
+	background-color: #ddcccc;
+	  font-family: sans-serif;
+	text-decoration:none;
+	}
+
+P.box {
+	background-color: #f2f2f2;
+}
+
+img {
+	border: 0;
+	}
+
+DIV.main  {
+        margin-left: 5%;
+        margin-right: 5%;
+        float: center;
+        background-color: #f2f2f2;
+        padding: 15pt 5pt 10pt 5pt;
+        border-width: 2pt;
+        border-style: solid; 
+        border-color:  #000000; 
+ 		font-family: sans-serif;
+		color: #000000;
+        }

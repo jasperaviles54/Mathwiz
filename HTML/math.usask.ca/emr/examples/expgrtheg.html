@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Reconstructed from a Web Archive snapshot captured on Jan 28, 2016. Original content authored by the University of Saskatchewan. -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Example -- Exponential Growth </title>
+    </head>
+
+    <body>
+        <h3> Modelling Exponential Growth - Using Logarithms </h3>
+
+        <p>Let's consider the following problem.</p>
+
+        <p>Statistics indicate that the world population since World War II has been growing at the rate of 1.9% per year.  Further, United Nations records indicate that the world population in 1975 was (approximately) 4 billion.  Assuming an exponential growth model, (a) what will the population of the world be in the year 2000? (b)  When will the world population be 7 billion?</p>
+
+        <p>
+            (a) Let A be the world population (in billions) at time t, in years since 1975. Then A<sub>0</sub> is the world population in 1975; therefore A<sub>0</sub>= 4 .
+            <br>
+            The rate of growth is actually the k value in the formula for exponential growth given above; for this problem, k=0.019.  So the exponential model for this problem is <center>A = 4e<sup>0.019t</sup></center>
+            <br>
+            The year 2000 corresponds to t=25, so to estimate the world population at this time we evaluate the function at t=25: 
+            <br>
+            <br>
+            <center>A=4 e<sup> 0.019(25)</sup>= 4 e<sup>0.475</sup> = 6.43 (approx.)</center>
+            <br>
+            <br>
+            The model predicts a world population of 6.43 billion in the year 2000.
+        </p>
+
+        <p>
+            (b) For the other question, we are given the population and we want to determine the time when the population is the given size.  So we set A=7 in the function (formula) for the population, and solve for time t. 
+            <br>
+            <center>7=4e<sup>0.019t</sup></center>
+            <br>
+            Isolating the exponential part gives <center>1.75= e<sup>0.019t</sup>.</center>
+            <br>
+            Now, to solve for t, we take natural logs (ln) of both sides: <center>ln 1.75 = ln(e<sup>0.019t</sup>)</center>
+            <br>
+            and the cancellation property for logarithms says <center>ln 1.75 = 0.019t.</center>
+            <br>
+            Then solving for t gives <center>t= (ln 1.75)/0.019 = 29.4, approximately. </center>
+        </p>
+
+        <p> According to the model, the world population should be 7 billion around the years 2004 or 2005. (1975 + 29 = 2004, 1975 + 30 = 2005.)</p>
+
+        <p>
+            <br>
+            Return to <a href="../seil.html">Logarithms and modelling</a>.
+        </p>
+
+        <footer>
+            <br>
+            <p>This page is a faithful reconstruction of an educational resource originally hosted by the University of Saskatchewan, archived on Jan 28, 2016. Recreated for archival and accessibility purposes.</p>
+        </footer>
+    </body>
+</html>
